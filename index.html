@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>JsB4</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body style="background-color: pink">
+  <br />
+  <br />
+  <br />
+
+  <!-- Bai 1 -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            Bai 1: Xuất 3 số theo thứ tự tăng dần
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <label for="">Số nguyên thứ a: </label>
+              <input id="sna" type="number" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="">Số nguyên thứ b: </label>
+              <input id="snb" type="number" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="">Số nguyên thứ c: </label>
+              <input id="snc" type="number" class="form-control">
+            </div>
+            <button class="btn btn-warning" onclick="soNguyen()">Total</button>
+
+          </div>
+          <div class="card-footer" id="showInfoSN">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br />
+  <br />
+  <br />
+  <br />
+  <hr />
+  <!-- bai 2: -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            Bai 2: Chào hỏi
+          </div>
+          <div class="card-body">
+            <select class="select mx-3" id="chonNG">
+              <option selected disabled>Chọn thành viên</option>
+              <option value="1">Bố</option>
+              <option value="2">Mẹ</option>
+              <option value="3">Anh trai</option>
+              <option value="4">Em gái</option>
+            </select>
+            <button class="btn btn-warning" onclick="chaoHoi()">Gửi Lời chào</button>
+          </div>
+          <div class="card-footer" id="showInfoChao">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br />
+  <br />
+  <br />
+  <br />
+  <hr />
+  <!-- bài 3 -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10">
+        <div class="card">
+          <div class="card-header">
+            Bai 3: Đếm số chẵn lẻ
+          </div>
+          <div class="card-body">
+            <input type="text" placeholder="Nhập số thứ 1" id="so1" />
+            <input type="text" placeholder="Nhập số thứ 2" id="so2" />
+            <input type="text" placeholder="Nhập số thứ 3" id="so3" />
+            <button class="btn btn-warning mx-5" onclick="demSo()">Đếm</button>
+          </div>
+          <div class="card-footer" id="showInfoSo">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br />
+  <br />
+  <br />
+  <br />
+  <hr />
+  <!-- bài 4 -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10">
+        <div class="card">
+          <div class="card-header">
+            Bai 4: Hãy cho biết đó là tam giác gì?
+          </div>
+          <div class="card-body">
+            <input type="text" placeholder="Nhập độ dài cạnh 1" id="a" />
+            <input type="text" placeholder="Nhập độ dài cạnh 2" id="b" />
+            <input type="text" placeholder="Nhập độ dài cạnh 3" id="c" />
+
+            <button class="btn btn-warning mx-5" onclick="tamGiac()">Dự đoán</button>
+          </div>
+          <div class="card-footer" id="showInfoTamG">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br />
+  <br />
+  <br />
+  <br />
+  <hr />
+  <script src="./index.js"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
